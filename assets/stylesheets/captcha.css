@@ -5,12 +5,30 @@
 	font-size: 13px;
 }
 
-#captcha_answer {
-	margin-left: .5em;
+#brain_buster_captcha {
+	display: inline-block;
+	width: 350px;
+	vertical-align: top;
 }
 
-.captcha_failed input {
+#captcha_answer {
+  margin-top: 6px;
+}
+
+#brain_buster_captcha input {
+  width: 100px !important;
+}
+
+.captcha-failed input {
 	border-style: inset;
 	border-color: red;
 	border-width: 3px;
+}
+
+div#error {
+  background-color: #eeb4b4;
+  font-weight: bold;
+  color: #000;
+  padding: 10px;
+  border: 1px solid #802a2a;
 }
