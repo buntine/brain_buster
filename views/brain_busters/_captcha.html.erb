@@ -6,7 +6,7 @@
     <label for="captcha_answer">Spam protection<em>*</em></label>
 	  <div id="brain_buster_captcha" class="<%= if last_captcha_attempt_failed? then 'captcha-failed' end %>">
       <span><%= @captcha.question %></span>
-      <%= text_field_tag :captcha_answer, params[:captcha_answer], :size => 10, :maxlength => 40 %>
+      <%= text_field_tag :captcha_answer, params[:captcha_answer], :size => 10, :maxlength => 40, :class => "required" %>
     </div>
   </li>
 
