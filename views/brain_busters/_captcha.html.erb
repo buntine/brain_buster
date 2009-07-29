@@ -2,11 +2,12 @@
 
   <%= hidden_field_tag :captcha_id, @captcha.id %>
 
-  <li>
+  <li class="captcha-item">
     <label for="captcha_answer">Spam protection<em>*</em></label>
 	  <div id="brain_buster_captcha" class="<%= if last_captcha_attempt_failed? then 'captcha-failed' end %>">
       <span><%= @captcha.question %></span>
       <%= text_field_tag :captcha_answer, params[:captcha_answer], :size => 10, :maxlength => 40, :class => "required" %>
+      <a href="/generate_new_captcha" class="new-captcha-link">Too hard? Click for another</a>
     </div>
   </li>
 

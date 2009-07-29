@@ -32,3 +32,9 @@ div#error {
   padding: 10px;
   border: 1px solid #802a2a;
 }
+
+a.new-captcha-link {
+  font-size: 0.8em;
+  color: blue;
+  margin-left: 3px;
+}
